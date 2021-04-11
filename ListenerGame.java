@@ -59,8 +59,6 @@ public class ListenerGame implements ActionListener{
 	//4) if the victory window has popped up and a button from it was pressed
 	public void actionPerformed(ActionEvent e) {
 		
-		System.out.println("value of endless" + currentGame.endlessGame);
-		
 		JButton pressed = (JButton) e.getSource();
 		
 		//getting digit
@@ -78,8 +76,6 @@ public class ListenerGame implements ActionListener{
 					
 					//in case this button was pressed to be checked
 					if(toCheck) {
-						
-						//System.out.println("Gotten into checker part!");
 						
 						if(Integer.parseInt(cellButtons[i][j].getText()) == solution[i][j]) {
 							cellButtons[i][j].setForeground(Color.GREEN);
